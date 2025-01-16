@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nand's project</title>
 
     <link rel="stylesheet" href="css\style.css">
 </head>
@@ -33,16 +33,33 @@
         <!-- Home Page -->
         <section>
             <!-- Title -->
+
             <header id="home-page">
                 <h1>Hi <span id="user-greeting">User</span>, welcome to our website</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
             </header>
 
+
+<!-- 
+            <header id="home-page">
+                <form name="message-form" onsubmit="return validateForm()">
+                    <input required type="text" placeholder="nama anda" id="name-input" name="nama-input">
+                    <button id="submit" type="submit">Kirim</button>
+                    <p id="error-name"></p>
+                </form>
+            
+                <h1>Hi <span id="name">-</span>, nice to meet you!</h1>
+            </header>
+        
+ -->
+
             <div class="banner-image banner-image-1"></div>
             <div class="banner-image banner-image-2"></div>
             <div class="banner-image banner-image-3"></div>
 
-            <!-- <button onclick="nextBanner()">Slide</button> -->
+            <div class="slider">
+                <button onclick="nextBanner()">Slide</button>
+            </div>
 
             <!--
             <div class="slide-show">
@@ -90,7 +107,12 @@
                 <h1>Our Profile</h1>
             </header>
 
-            <div class="content"></div>
+            <div class="content-profile">
+                <div class="img-profile"></div>
+                <p>
+                    Treasure adalah grup vokal pria Korea Selatan yang dibentuk oleh YG Entertainment melalui program "YG Treasure Box" yang terdiri dari 10 anggota, yaitu Choi Hyun-suk, Park Jihoon, Yoshi, Junkyu, Yoon Jae-hyuk, Asahi, Doyoung, Haruto, Park Jeongwoo, dan So Junghwan. Sejak 2025, Junkyu dan Asahi bertindak sebagai leader grup menggantikan Choi Hyun-suk dan Park Jihoon
+                </p>
+            </div>
 
         </section>
 
@@ -101,7 +123,29 @@
                 <h1>Portofolio</h1>
             </header>
 
-            <div class="content"></div>
+            <div class="content-porto">
+
+                <div class="content-porto-item">
+                    <div class="img-porto img-porto-1"></div>
+                    <p>
+                        The new song ‘LAST NIGHT’ is an energetic dance track that showcases TREASURE’s youthful and vibrant energy, offering a fresh and new charm that contrasts with the powerful vibe of their previous single, ‘KING KONG’.
+                    </p>
+                </div>
+
+                <div class="content-porto-item">
+                    <div class="img-porto img-porto-2"></div>                    
+                    <p>
+                        TREASURE's latest release, 'KING KONG', is a dance track with finely tuned dynamics. It boasts a unique sound, defined by its sharp beats and resonant bassline. The track showcases TREASURE's musical evolution, with powerful vocals that highlight the group's growth. Lyrically, it draws inspiration from the theme of blind love depicted in "KING KONG", expressing sentiments of unwavering devotion despite acknowledging that the relationship may not endure.
+                    </p>
+                </div>
+
+                <div class="content-porto-item">
+                    <div class="img-porto img-porto-3"></div>                                        
+                    <p>
+                        The second full album "REBOOT” includes 10 high-quality tracks, and highlights TREASURE’s exceptional production skills, serving as a signal for their new start.Through a more expanded music spectrum, TREASURE will be presenting their fascinating tracks and scaled-up performances that move beyond their youthful image.The meaning of REBOOT by TREASURE is … LOADING…
+                    </p>
+                </div>
+            </div>
 
 
         </section>
@@ -114,18 +158,58 @@
             </header>
 
             <div class="content">
-                <form action="">
+                <form id="input-form">
                     <div>
                         <label for="name-input">Name</label>
                         <input type="text" name="name" id="name-input" placeholder="Enter your name" required>
                     </div>
+                    
+                    <div>
+                        <label for="tanggal-input">Tanggal Lahir</label>
+                        <input type="date" name="tanggal" id="tanggal-input" required>
+                    </div>
+
+                    <div>
+                        <label for="jk-input">Jenis Kelamin </label>
+                        <!-- <input type="text" name="name" id="name-input" placeholder="Enter your name" required> -->
+                        <input type="radio" id="jk-input-lakilaki" name="laki-laki" value="Laki-laki" required>  
+                        <label for="laki-laki">Laki-laki</label> 
+                        <input type="radio" id="jk-input-perempuan" name="perempuan" value="Perempuan" required>  
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+
+                    <div>
+                        <label for="pesan-input">Pesan</label>
+                        <textarea name="pesan" id="pesan-input" placeholder="Pesan" required></textarea>
+                    </div>
 
                     <!-- <button type="button" id="submit-btn" onclick="formValidation()">Submit</button> -->
+                    <br>
                     <button type="button" id="submit-btn">Submit</button> 
                     <!-- klo pake doc di javascript onclick dihilangkan -->
                 </form>
 
-                <div id="result-form"></div>
+                <br>
+
+                <div class="result-form">
+                    <div class="preview-item">
+                        <label>Nama : </label>
+                        <span id="result-form-nama"></span>
+                      </div>
+                      <div class="preview-item">
+                        <label>Tanggal Lahir : </label>
+                        <span id="result-form-tanggal"></span>  
+                      </div>
+                      <div class="preview-item">
+                        <label>Jenis kelamin : </label>
+                        <span id="result-form-jk"></span>  
+                      </div>
+                      <div class="preview-item">
+                        <label>Pesan : </label>
+                        <span id="result-form-pesan"></span>  
+                      </div>
+                </div>
+
             </div>            
         </section>
     </main>
@@ -134,7 +218,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 - All rights reserved</p>
+        <p>&copy; 2025 - Created by syafanandaa</p>
     </footer>
     
     <script src="js\script.js"></script>

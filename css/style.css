@@ -37,28 +37,91 @@ nav > a {
 
 .banner-image {
     height: 450px;
-    /* background-image: url(https://picsum.photos/1000); */
     background-size: cover;
     background-position: center;
 }
 
 .banner-image-1 {
     background-image: url(https://picsum.photos/500);
-
 }
 
 .banner-image-2 {
     background-image: url(https://picsum.photos/501);
-
 }
 
 .banner-image-3 {
     background-image: url(https://picsum.photos/502);
+}
 
+.slider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-profile {
+    height: 400px;
+    width:auto;
+    background-size:cover;
+    background-position: center;
+    align-content: center;
+    background-image: url(https://yg-treasure.com/concert/2025-fancon/img/ts_sm2.png);
+}
+
+.content-porto {
+    border: 1px solid black;
+    display: flex;
+}
+
+.content-porto-item {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+    width: 400px;
+}
+
+.img-porto {
+    height: 300px;
+    width: 300px;
+    background-size:cover;
+    background-position: center;
+    align-content: center;
+}
+
+.img-porto-1 {
+    background-image: url(https://www.ygfamily.com/contents/images/2024/12/DS_LAST-NIGHT_Cover_960_1.jpg);
+}
+
+.img-porto-2 {
+    background-image: url(https://www.ygfamily.com/contents/images/2024/05/TS_album_1.jpg);
+}
+
+.img-porto-3 {
+    background-image: url(https://www.ygfamily.com/contents/images/2023/08/treasure-album-reboot_1.jpeg);
 }
 
 .content {
-    height: 500px;
+    /* height:500px; */
+    display: flex;
+    align-items: flex-start;
+}
+
+.content #input-form {
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+    margin-right: 10%;
+}
+
+label {
+    min-width: 80px;
+}
+
+.content .result-form {
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+    margin-left: 10%;
 }
 
 footer {
@@ -78,6 +141,5 @@ footer {
 
     .logo-icon {
         margin-bottom: 14px;
-    }
-    
+    }    
 }
