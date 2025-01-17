@@ -10,9 +10,10 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Treasure_Logo_%282023%29.jpg);
     background-size: cover;
 }
+
 
 nav {
     display: flex;
@@ -36,21 +37,25 @@ nav > a {
 }
 
 .banner-image {
-    height: 450px;
-    background-size: cover;
+    height: auto;
+    display:block;
+    height: 400px;
+    background-size:cover;
     background-position: center;
+    /* margin: 20px; */
+    /* border-radius: 1%; */
 }
 
 .banner-image-1 {
-    background-image: url(https://picsum.photos/500);
+    background-image: url(https://i.pinimg.com/originals/c4/95/9b/c4959bd2be63a625a31b397208a17ddc.jpg);
 }
 
 .banner-image-2 {
-    background-image: url(https://picsum.photos/501);
+    background-image: url(https://i.pinimg.com/originals/3d/9a/11/3d9a11361b8ad57889112897281653a1.jpg);
 }
 
 .banner-image-3 {
-    background-image: url(https://picsum.photos/502);
+    background-image: url(https://yg-treasure.com/concert/2025-fancon/img/ts_sm2.png);
 }
 
 .slider {
@@ -58,34 +63,29 @@ nav > a {
     margin-top: 20px;
 }
 
-.img-profile {
-    height: 400px;
-    width:auto;
-    background-size:cover;
-    background-position: center;
-    align-content: center;
-    background-image: url(https://yg-treasure.com/concert/2025-fancon/img/ts_sm2.png);
-}
 
 .content-porto {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
+    align-items:center;
 }
 
 .content-porto-item {
     padding: 10px;
     border: 1px solid black;
     text-align: center;
-    margin: 20px;
-    width: 400px;
+    /* align-content: center; */
+    margin: 10px;
+    /* width:100%; */
 }
 
 .img-porto {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     background-size:cover;
-    background-position: center;
+    /* background-position: center; */
     align-content: center;
+    border-radius: 10%;
 }
 
 .img-porto-1 {
@@ -100,29 +100,33 @@ nav > a {
     background-image: url(https://www.ygfamily.com/contents/images/2023/08/treasure-album-reboot_1.jpeg);
 }
 
-.content {
+
+
+
+
+.content-message {
     /* height:500px; */
     display: flex;
     align-items: flex-start;
 }
 
-.content #input-form {
+.content-message #input-form {
     border: 1px solid black;
     width: 100%;
     padding: 20px;
-    margin-right: 10%;
+    margin: 10px;
 }
 
-label {
-    min-width: 80px;
-}
-
-.content .result-form {
+.content-message .result-form {
     border: 1px solid black;
     width: 100%;
     padding: 20px;
-    margin-left: 10%;
+    margin: 10px;
+
 }
+
+
+
 
 footer {
     text-align: center;
@@ -141,5 +145,13 @@ footer {
 
     .logo-icon {
         margin-bottom: 14px;
-    }    
+    }
+
+    .content-porto {
+        flex-direction: column;
+    }
+
+    .content-message {
+        flex-direction: column;
+    }
 }

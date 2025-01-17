@@ -1,40 +1,37 @@
-// Ini adalah file javascript
 
+let usernameInput = document.getElementById('user-name'); // buat variabel mengambil data dr id user-name
 
-// let nameInput = document.getElementById('name-input'); // get input kedalam sebuah variabel 
+document.getElementById('submit').addEventListener("click", function() { // jika klik tombol kirim akan menjalankan function
+    const username = usernameInput.value // mendapatkan nama dari inputan
 
-// document.getElementById('kirim').addEventListener("click", function() { // kemudian apabila di klik tombol kirim maka akan menjalankan sbuah function
-//     const nama = nameInput.value // mendapatkan nama dari inputan
+    if (name == "") { 
+        document.getElementById("error-name").innerHTML = "Nama tidak boleh kosong!"; // jika name kosong akan tampil pesan error
+    } else {
+        document.getElementsById('name').innerHTML = username; // mengganti nama di html dengan nama yang baru
+    }
+}); 
 
-//     if (name == "") {
-//         document.getElementById("error-name").innerHTML = "Nama tidak boleh kosong!";
-//     } else {
-//         document.getElementsById('name').innerHTML = nama; // mengganti nama di html dengan nama yang baru
-//     }
-// }); 
-
-// function validateForm() {
-//     const nama = document.forms['message-form']['name-input'].value; // variabel
+function validateForm() {
+    const nama = document.forms['message-form']['user-name'].value;
     
-//     if (nama == '') {
-//         document.getElementById("error-name").innerHTML = "Tidak boleh kosong!"
+    if (nama == '') {
+        document.getElementById("error-name").innerHTML = "Tidak boleh kosong!"
 
-//         return false; // form validationnya berati salah
-//     }
+        return false; // form validationnya berati salah
+    }
 
-//     // document.getElementById("name").innerHTML = nama;
-//     // document.getElementById("error-name").innerHTML = "";
+    // document.getElementById("name").innerHTML = nama;
+    // document.getElementById("error-name").innerHTML = "";
 
-//     setName(nama)
+    setName(nama)
 
-//     return false;
-// }
+    return false;
+}
 
-// function setName(name) {
-//     document.getElementById("name").innerHTML = name;
-//     document.getElementById("error-name").innerHTML = "";
-
-// }
+function setName(name) {
+    document.getElementById("username").innerHTML = name;
+    document.getElementById("error-name").innerHTML = "";
+}
 
 
 
